@@ -1,0 +1,22 @@
+{
+  "name": "nitro-srvx-tracing-repro",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Reproduction: srvx tracing channels are not emitted by the Nitro Vite dev server",
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "nitro build",
+    "start": "node .output/server/index.mjs",
+    "probe": "node scripts/probe.mjs"
+  },
+  "dependencies": {
+    "nitro": "3.0.260903-beta"
+  },
+  "devDependencies": {
+    "vite": "^8.1.4"
+  }
+}
